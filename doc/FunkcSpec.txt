@@ -6,9 +6,24 @@ hanem egy új és kiforrottab oldalt választanának inkább. Az oldalunkon kön
 akár márka, típus, szín szerint rendezve is. Mindenkinek lehetősége van új hirdetést feladni a saját járművéről.
 
 2. Jelenlegi helyzet
-A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttműködve kezdtük el megvalósítani a letisztult, egyszerűen használható weblapot.
-Szerintük is nagy szükség lehet egy ilyen létrehozásában, bíznak benne hogy a konkurens oldalaknál is jobb megoldást tudunk létrehozni.
-Célja hogy minnél gyorsabban és részletesebben lehessen használt autót venni, illedve eladni.
+A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttműködve kezdtük el megvalósítani a letisztult, egyszerűen
+használható weblapot. Szerintük is nagy szükség lehet egy ilyen létrehozásában, bíznak benne hogy a konkurens oldalaknál is jobb
+megoldást tudunk létrehozni. Célja hogy minnél gyorsabban és részletesebben lehessen használt autót venni, illedve eladni.
 
 5. Igényelt üzleti folyamatok modellje
-Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felrémlik ennek kapcsán, a garancia. Habár a felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés születne belőle, ha más-más tartalommal lehetne megtölteni a felelősség kérdését. Ez persze jó hír, hiszen a kárigényünket is könnyebben érvényesíthetjük a fogalmak tisztázása után. A garancia szó helyett a jog a jótállást és a szavatosságot használja. Mégpedig nyomós okkal különíti el ezt a látszólag hasonló kérdéskört. A hatályos Polgári Törvénykönyv szerint, aki jótállást vállal vagy arra köteles egy termékkel kapcsolatban, felelnie kell a hibás teljesítésért. 
+Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felrémlik ennek kapcsán, a garancia. Habár a
+felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés
+születne belőle, ha más-más tartalommal lehetne megtölteni a felelősség kérdését. Ez persze jó hír, hiszen a kárigényünket is könnyebben
+érvényesíthetjük a fogalmak tisztázása után. A garancia szó helyett a jog a jótállást és a szavatosságot használja. Mégpedig nyomós okkal
+különíti el ezt a látszólag hasonló kérdéskört. A hatályos Polgári Törvénykönyv szerint, aki jótállást vállal vagy arra köteles egy
+termékkel kapcsolatban, felelnie kell a hibás teljesítésért. 
+
+6. Követelménylista
+ID	Név		Kifejtés
+K1	Logo		A felhasználó ha megnyomja lefrissíti az oldalt
+K2	Kezdőlap	Megnyomására a felhasználót a kezdőlapra irányítja az oldal.
+K3	Regisztráció	Regisztrációs felület jelenik meg.
+K4	Bejelenkezés	A korábban már regisztrált felhasználók bejelentkezési felülete.
+K5	Rendezések	Különböző szempontok alapján lehet rendezni a rekordokat.
+K6	Küldés gomb	Erre kattintva lehet rendezni a korábbi beállítások szerint.
+K7	LINK gomb 	Az adott jármű hivatalos adatlapját nyitja meg.
