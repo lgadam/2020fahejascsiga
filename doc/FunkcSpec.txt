@@ -1,3 +1,4 @@
 Funkcionális Specifikáció
 
 1. Áttekintés
+A weboldal olyanok számára készül akik el szeretnék adni a használt autójukat, de nem  akarják a szokványos oldalakra ezt feltölteni, hanem egy új és kiforrottab oldalt választanának inkább. Az oldalunkon könnyen megtalálhatja a lakhelyéhez legközelebbi járműveket, akár márka, típus, szín szerint rendezve is. Mindenkinek lehetősége van új hirdetést feladni a saját járművéről.
