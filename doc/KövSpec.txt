@@ -1,0 +1,5 @@
+Követelmény specifikáció
+
+1. Bevezetés
+Olyan weblapot szerettünk volna létrehozni, ahol az emberek könnyedén el tudják adni a használt autójukat, illetve egyéb járműveiket.
+Számunkra fontos szerepet tölt be, hogy a vásárlóknak a szerzett tapasztalainkat felhasználva segíteni tudjunk, így találtuk ki ezt a weboldalt.
