@@ -27,3 +27,10 @@ K4	Bejelenkezés	A korábban már regisztrált felhasználók bejelentkezési fe
 K5	Rendezések	Különböző szempontok alapján lehet rendezni a rekordokat.
 K6	Küldés gomb	Erre kattintva lehet rendezni a korábbi beállítások szerint.
 K7	LINK gomb 	Az adott jármű hivatalos adatlapját nyitja meg.
+
+11. Fogalomszótár
+A név oszlopban az adott jármű teljes neve látható.
+A cím értelemszerűen a címüket írja le.
+A Megye oszlopában a megye szerinti elhelyezkedés alapján tudunk szűrni.
+Elérhetőségeknél az email címek, illetve telefonszámokat találhatjuk meg.
+A adatlap oszlopában pedig a jármű adatlapja nyílik meg pdf-ben mondjuk.
