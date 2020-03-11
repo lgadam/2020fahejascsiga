@@ -3,3 +3,9 @@ Követelmény specifikáció
 1. Bevezetés
 Olyan weblapot szerettünk volna létrehozni, ahol az emberek könnyedén el tudják adni a használt autójukat, illetve egyéb járműveiket.
 Számunkra fontos szerepet tölt be, hogy a vásárlóknak a szerzett tapasztalainkat felhasználva segíteni tudjunk, így találtuk ki ezt a weboldalt.
+
+2. Jelenlegi helyzet
+A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttműködve kezdtük el megvalósítani a letisztult, egyszerűen 
+használható weblapot.
+Szerintük is nagy szükség lehet egy ilyen létrehozásában, bíznak benne hogy a konkurens oldalaknál is jobb megoldást tudunk létrehozni.
+Célja hogy minnél gyorsabban és részletesebben lehessen használt autót venni, illedve eladni.
