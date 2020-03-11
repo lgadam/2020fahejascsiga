@@ -32,6 +32,10 @@ K5	Rendezések	Különböző szempontok alapján lehet rendezni a rekordokat.
 K6	Küldés gomb	Erre kattintva lehet rendezni a korábbi beállítások szerint.
 K7	LINK gomb 	Az adott jármű hivatalos adatlapját nyitja meg.
 
+9. Használati esetek
+A weblapot egy időben bármennyien használhatják a szerver korlátait tekintve persze. A webcímet beírva lehet elérni asztali gépről, 
+illetve bármilyen, böngészésre alkalmas hordozató eszközről.
+
 11. Fogalomszótár
 A név oszlopban az adott jármű teljes neve látható.
 A cím értelemszerűen a címüket írja le.
