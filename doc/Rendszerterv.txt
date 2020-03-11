@@ -1,0 +1,3 @@
+3. Üzleti folyamatok modellje
+Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
+valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
