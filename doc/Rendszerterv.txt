@@ -14,6 +14,16 @@ valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt
 5.Funkcionális terv
 Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre , bejelentkezési oldalra. Képernyőtervek elkészültek, feltöltve külön fájlként.
 
+6. Fizikai Környezet
+- A weboldal egyaránt használható minden fajta erre alkalmas eszközön, mivel teljes mértékben reszponzív.
+- Nincsennek megvásárolt komponenseink
+- Fejlesztő eszközök:
+	- Notepad++
+	- Wampserver64
+	- PHPStorm
+	- Atom
+	- Bootstrap
+
 7.Absztrakt domain model
 Szerepek
 - Admin: Teljeskörű adminisztrátor, mindent lát, mindent tud állítani. A projekthez tartozó összes részt.
