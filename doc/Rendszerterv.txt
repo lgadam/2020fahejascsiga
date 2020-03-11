@@ -1,3 +1,9 @@
 3. Üzleti folyamatok modellje
 Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
 valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
+
+7.Absztrakt domain model
+Szerepek
+- Admin: Teljeskörű adminisztrátor, mindent lát, mindent tud állítani. A projekthez tartozó összes részt.
+- Read Only: Csak olvasási joga van a projektben.
+- User: A webes szoftvert használó egyén.
