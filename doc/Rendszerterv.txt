@@ -1,7 +1,11 @@
 1. Rendszer célja
 A weboldal olyanok számára készül, akik szeretnék eladni az autójukat, de nem szeretnének fizetni a hirdetésért. Az oldalunkon könnyen tudja regisztrálni autóját a felhasználó
 barát felületünkön. Aki pedig autót szeretne vásárolni könnyen tud nézelődni az oldalunkon. Mindenkinek lehetősége van eladni kívánt autóját regisztrálni, valamint használt autók
-után nézelődni a weboldalunkon. 
+után nézelődni a weboldalunkon.
+
+2. Projekt terv
+Az a célunk, hogy a projekt összes résztvevője foglalkozzon a felmerülő problémák mindegyikével.
+Mérföldkövek: Elsőnek a dokumentáció elkészítését tartottuk a legfontosabbnak, majd ezután következett a képernyőtervek elkészítése, végül a feladatok megoldása közös erővel. 
 
 3. Üzleti folyamatok modellje
 Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
