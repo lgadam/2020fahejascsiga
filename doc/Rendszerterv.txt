@@ -11,6 +11,9 @@ Mérföldkövek: Elsőnek a dokumentáció elkészítését tartottuk a legfonto
 Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
 valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
 
+4.Követelmények
+A jelenlegi szabványoknak teljes mértékben megfelel.
+
 5.Funkcionális terv
 Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre , bejelentkezési oldalra. Képernyőtervek elkészültek, feltöltve külön fájlként.
 
@@ -30,6 +33,11 @@ Szerepek
 - Read Only: Csak olvasási joga van a projektben.
 - User: A webes szoftvert használó egyén.
 
+8. Architekturális terv
+A rendszer folyamatosan bővíthető a felhasználók által. A bejelentkezési felületen megtudnak adni minden szükséges adatot, amivel belekerülnek az adatbázisba.
+Biztonsági funkciók közé tartozik, hogy van admin fiók, ami minden regisztrált felhasználó adatát láthatja, kezelheti, kivéve a jelszót, mivel az titkosítva szerepel.
+Minden felhasználó csak a saját adatait tudja módosítani, illetve törölni.
+
 9. Adatbázis terv 
 3 darab adatbázist használ az oldal amik a következőek:
 	-Tartalmazza magát az eladni kívánt használt autók adatait
@@ -47,4 +55,10 @@ lenne a programban a fejlesztők kijavítják a lehető leghamarabb.
 
 11. Telepítési terv
 A weboldalt nem kell telepíteni, szükséges hozzá egy böngésző és bármilyen erre alkalmas platformról elérhető.
+
+12.Karbantartási terv
+A weblap közepes mennyiségű karbantartást igényel, amely a következőkre bontható:
+- Ellenőrizni, hogy a jövőben kiadott böngésző verziókban hogyan fut a weblap, ha probléma lép fel, javítani
+- Meggyőződés arról, hogy a kiszolgáló szerver éppen fut, ha nem, akkor újraindítani
+- Idővel ellenőrizni a felvitt adatok helyességét, megfelelő formátumát.
 
