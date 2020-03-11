@@ -16,4 +16,6 @@ Szerepek
 - Read Only: Csak olvasási joga van a projektben.
 - User: A webes szoftvert használó egyén.
 
+11. Telepítési terv
+A weboldalt nem kell telepíteni, szükséges hozzá egy böngésző és bármilyen erre alkalmas platformról elérhető.
 
