@@ -14,6 +14,13 @@ megoldást tudunk létrehozni. Célja hogy minnél gyorsabban és részletesebbe
 Mivel szabadon regisztrálható az oldalra új jármű, így bizonyos keretek közt, de szinte végtelen számú hirdetés hozható létre regisztrálással.
 Így egy folyamatosan bővülő weboldalt hoztunk létre, amit reményeink szerint idővel minden érintett ember megismer.
 
+4. Jelenlegi üzleti folyamatok modellje
+Több-kevesebb idő és vesződség mellett veszélyeket és buktatókat is rejthet egy használt autó eladása. Hogyan fotózzuk eladó használt 
+autónkat, mi szerepeljen a hirdetésben és milyen hibákat kár elkövetni?
+Aki autót ad el, abból indulhat ki, hogy a vevőnek az autó összes jó tulajdonsága és előnye magától értetődő lesz, hiányosságait és hibáit
+ viszont alkualapnak használja majd. A használtautó-vásárlónak az adott autó új, bár valójában nem az és pont azért kerül kevesebbe a
+ nullkilométeres szalonautóknál, mert nem új.
+
 5. Igényelt üzleti folyamatok modellje
 Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felrémlik ennek kapcsán, a garancia. Habár a
 felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés

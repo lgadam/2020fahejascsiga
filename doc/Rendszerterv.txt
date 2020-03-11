@@ -1,6 +1,14 @@
+1. Rendszer célja
+A weboldal olyanok számára készül, akik szeretnék eladni az autójukat, de nem szeretnének fizetni a hirdetésért. Az oldalunkon könnyen tudja regisztrálni autóját a felhasználó
+barát felületünkön. Aki pedig autót szeretne vásárolni könnyen tud nézelődni az oldalunkon. Mindenkinek lehetősége van eladni kívánt autóját regisztrálni, valamint használt autók
+után nézelődni a weboldalunkon. 
+
 3. Üzleti folyamatok modellje
 Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
 valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
+
+5.Funkcionális terv
+Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre , bejelentkezési oldalra. Képernyőtervek elkészültek, feltöltve külön fájlként.
 
 7.Absztrakt domain model
 Szerepek
