@@ -30,6 +30,12 @@ Szerepek
 - Read Only: Csak olvasási joga van a projektben.
 - User: A webes szoftvert használó egyén.
 
+9. Adatbázis terv 
+3 darab adatbázist használ az oldal amik a következőek:
+	-Tartalmazza magát az eladni kívánt használt autók adatait
+	-Regisztrált felhasználókat tartalmazza
+	-Jelszó visszaállításához szükséges adatokat tárolja.
+
 10. Tesztterv
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése. A felhasználói felület megfelelően működjön. Regisztrálásnál email verifikálás megfelelő legyen.
 Alfa teszt:
