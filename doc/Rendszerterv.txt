@@ -11,6 +11,9 @@ Mérföldkövek: Elsőnek a dokumentáció elkészítését tartottuk a legfonto
 Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
 valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
 
+4.Követelmények
+A jelenlegi szabványoknak teljes mértékben megfelel.
+
 5.Funkcionális terv
 Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre , bejelentkezési oldalra. Képernyőtervek elkészültek, feltöltve külön fájlként.
 
