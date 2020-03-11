@@ -10,6 +10,10 @@ A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttm�
 használható weblapot. Szerintük is nagy szükség lehet egy ilyen létrehozásában, bíznak benne hogy a konkurens oldalaknál is jobb
 megoldást tudunk létrehozni. Célja hogy minnél gyorsabban és részletesebben lehessen használt autót venni, illedve eladni.
 
+3.Terjedelem
+Mivel szabadon regisztrálható az oldalra új jármű, így bizonyos keretek közt, de szinte végtelen számú hirdetés hozható létre regisztrálással.
+Így egy folyamatosan bővülő weboldalt hoztunk létre, amit reményeink szerint idővel minden érintett ember megismer.
+
 5. Igényelt üzleti folyamatok modellje
 Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felrémlik ennek kapcsán, a garancia. Habár a
 felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés
