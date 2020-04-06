@@ -1,54 +1,42 @@
 Funkcionális Specifikáció
 
 1. Áttekintés
-A weboldal olyanok számára készül akik el szeretnék adni a használt autójukat, de nem  akarják a szokványos oldalakra ezt feltölteni,
-hanem egy új és kiforrottab oldalt választanának inkább. Az oldalunkon könnyen megtalálhatja a lakhelyéhez legközelebbi járműveket, 
-akár márka, típus, szín szerint rendezve is. Mindenkinek lehetősége van új hirdetést feladni a saját járművéről.
+Ez a weboldal olyanok számára készült, akik el szeretnék adni a használt autójukat, de nem  akarják ezt a szokványos oldalakra feltölteni, hanem egy új és kiforrottabb, jól strukturált és könnyen kezelhető oldalt választanának inkább. Az oldalon szűrhető a márka, típus, évjárat. a kilométer óra állása és az üzemanyag típusa. Az oldal egyedisége, hogy egy úgynevezett adatlapon pdf formátumban közölhet a járműről képeket, felszereltséget és egyéb információkat. Ennek megfelelően tudja a saját hirdetésének specifikációit megadni, egyúttal tájékozódhat a környéken fellelhető árakról is.
 
 2. Jelenlegi helyzet
-A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttműködve kezdtük el megvalósítani a letisztult, egyszerűen
-használható weblapot. Szerintük is nagy szükség lehet egy ilyen létrehozásában, bíznak benne hogy a konkurens oldalaknál is jobb
-megoldást tudunk létrehozni. Célja hogy minnél gyorsabban és részletesebben lehessen használt autót venni, illedve eladni.
+A megrendelő egy helyi autókereskedés volt, velük konzultálva és együttműködve kezdtük el megvalósítani a letisztult, egyszerűen kezelhető oldal fejlesztését. A cél egy olyan felület létrehozása volt, amely könnyen megkülönböztethető a konkurens oldalaktól, ugyanakkor gyors és részletes keresést tesz lehetővé a használt autó piacon. 
 
 3.Terjedelem
-Mivel szabadon regisztrálható az oldalra új jármű, így bizonyos keretek közt, de szinte végtelen számú hirdetés hozható létre regisztrálással.
-Így egy folyamatosan bővülő weboldalt hoztunk létre, amit reményeink szerint idővel minden érintett ember megismer.
+Az oldalra való regisztrálás nem limitált, így akár kereskedők is használhatják. Mivel szabadon regisztrálható az oldalra új jármű, így bizonyos keretek közt, de szinte végtelen számú hirdetés hozható létre. Az oldal így egy folyamatosan bővülő felület, amelynek csak a mögötte működő szerver kapacitása szab határt. 
 
 4. Jelenlegi üzleti folyamatok modellje
-Több-kevesebb idő és vesződség mellett veszélyeket és buktatókat is rejthet egy használt autó eladása. Hogyan fotózzuk eladó használt 
-autónkat, mi szerepeljen a hirdetésben és milyen hibákat kár elkövetni?
-Aki autót ad el, abból indulhat ki, hogy a vevőnek az autó összes jó tulajdonsága és előnye magától értetődő lesz, hiányosságait és hibáit
- viszont alkualapnak használja majd. A használtautó-vásárlónak az adott autó új, bár valójában nem az és pont azért kerül kevesebbe a
- nullkilométeres szalonautóknál, mert nem új.
+A jelenlegi használtautó piacon bárki, aki eddig megpróbált venni, vagy eladni autót találkozhatott azzal, hogy nagyszámú hirdetés kering rengeteg hiányossággal, alapvető adatok nélkül. Rosszul fotózva, vagy hibás szöveggel feladott hirdetésben várja a jelentkezőket, esetleg még a telefonszám is hibásan van megadva, és nem lehet utolérni az eladót. Ezért nem árt, ha tisztában vagyunk azzal, hogy az érdeklődők az autó extráit alapnak tekintik, míg a felsorolt hibákat, hiányosságokat alkualapként használják fel a vásárláskor. 
 
 5. Igényelt üzleti folyamatok modellje
-Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felrémlik ennek kapcsán, a garancia. Habár a
-felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés
+Használt autó vásárlása esetén mégis mi nyújthat biztonságot? Az első szó, ami felmerül ennek kapcsán, a garancia. Habár a felelősségvállalás terhét gondoljuk a szó mögé, szerencsére a jogalkotó részletesebben foglalkozik a kérdéssel. Ugyanis sok félreértés
 születne belőle, ha más-más tartalommal lehetne megtölteni a felelősség kérdését. Ez persze jó hír, hiszen a kárigényünket is könnyebben
 érvényesíthetjük a fogalmak tisztázása után. A garancia szó helyett a jog a jótállást és a szavatosságot használja. Mégpedig nyomós okkal
-különíti el ezt a látszólag hasonló kérdéskört. A hatályos Polgári Törvénykönyv szerint, aki jótállást vállal vagy arra köteles egy
-termékkel kapcsolatban, felelnie kell a hibás teljesítésért. 
+különíti el ezt a látszólag hasonló kérdéskört. A hatályos Polgári Törvénykönyv szerint, aki jótállást vállal vagy arra köteles egy termékkel kapcsolatban, felelnie kell a hibás teljesítésért. Használt autó vásárlásakor a garancia meghatározott időre szól, és ez alapján a kötelezett nem bújhat ki a felelősség alól, a hiba javítását, vagy az alkatrész cseréjét vállalnia kell.
 
 6. Követelménylista
 ID	Név		Kifejtés
-K1	Logo		A felhasználó ha megnyomja lefrissíti az oldalt
+K1	Logo		A felhasználó, ha megnyomja lefrissíti az oldalt.
 K2	Kezdőlap	Megnyomására a felhasználót a kezdőlapra irányítja az oldal.
 K3	Regisztráció	Regisztrációs felület jelenik meg.
-K4	Bejelenkezés	A korábban már regisztrált felhasználók bejelentkezési felülete.
+K4	Bejelentkezés	A korábban már regisztrált felhasználók bejelentkezési felülete.
 K5	Rendezések	Különböző szempontok alapján lehet rendezni a rekordokat.
 K6	Küldés gomb	Erre kattintva lehet rendezni a korábbi beállítások szerint.
 K7	LINK gomb 	Az adott jármű hivatalos adatlapját nyitja meg.
 
 9. Használati esetek
-A weblapot egy időben bármennyien használhatják a szerver korlátait tekintve persze. A webcímet beírva lehet elérni asztali gépről, 
-illetve bármilyen, böngészésre alkalmas hordozató eszközről.
+A weblapot egy időben bármennyien használhatják a szerver korlátait tekintve persze. A webcímet beírva lehet elérni asztali gépről, illetve bármilyen, böngészésre alkalmas hordozható eszközről.
 
 10.Forgatókönyv
-Értelemszerűen, tetszőlegesen használható arra amire való az oldal. Megtudjuk keresni a tartózkodási helyünkhöz legközelebbi járművet, a legfőbb paraméterek alapján. regisztráció nélkül is lehet ingyenesen keresni az oldalon.
+Értelemszerűen, tetszőlegesen használható arra, amire való az oldal. Meg tudjuk keresni a tartózkodási helyünkhöz legközelebbi járművet a legfőbb paraméterek alapján. Regisztráció nélkül is lehet ingyenesen keresni az oldalon, nem kell hozzá külön bejelentkezni.
 
 11. Fogalomszótár
 A név oszlopban az adott jármű teljes neve látható.
 A cím értelemszerűen a címüket írja le.
 A Megye oszlopában a megye szerinti elhelyezkedés alapján tudunk szűrni.
 Elérhetőségeknél az email címek, illetve telefonszámokat találhatjuk meg.
-A adatlap oszlopában pedig a jármű adatlapja nyílik meg pdf-ben mondjuk.
+Az adatlap oszlopában pedig a jármű adatlapja nyílik meg.
