@@ -54,3 +54,19 @@ INSERT INTO `hasznaltautok` (`id`, `Cim`, `Marka`, `Tipus`, `Evjarat`, `Uzemanya
 (6, '1012', 'Audi', 'A6', '2009', 'Dízel', '210921', 3190000, 1);
 
 -- --------------------------------------------------------
+--
+-- Tábla szerkezet ehhez a táblához `userregistration`
+--
+
+DROP TABLE IF EXISTS `userregistration`;
+CREATE TABLE IF NOT EXISTS `userregistration` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `tel` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `activationcode` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  `admin` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
