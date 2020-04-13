@@ -39,6 +39,18 @@ CREATE TABLE IF NOT EXISTS `hasznaltautok` (
   PRIMARY KEY (`id`),
   KEY `madeby` (`madeby`),
   KEY `madeby_2` (`madeby`)
-) ENGINE=InnoDB AUTO_INCREMENT=324 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
+-- A tábla adatainak kiíratása `hasznaltautok`
+--
+
+INSERT INTO `hasznaltautok` (`id`, `Cim`, `Marka`, `Tipus`, `Evjarat`, `Uzemanyag`, `Kilometer_Allas`, `Ar`, `madeby`) VALUES
+(1, '3200 Gyöngyös', 'Honda', 'Civic', '2002', 'Benzin', '203123', 1230900, 1),
+(2, '3200 Gyöngyös', 'Fiat', 'Stilo', '2008', 'Hibrid', '128000', 22323232, 2),
+(3, '3300 Eger', 'Suzuki', 'Swift', '2004', 'Dízel', '321000', 2800000, 1),
+(4, '3200 Gyöngyös', 'Ford', 'Focus', '1999', 'Benzin', '168091', 560000, 1),
+(5, '1014', 'BMW', '320d', '2001', 'Dízel', '461082', 1290000, 1),
+(6, '1012', 'Audi', 'A6', '2009', 'Dízel', '210921', 3190000, 1);
+
+-- --------------------------------------------------------
