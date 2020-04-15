@@ -8,23 +8,29 @@ class Account
     private $Order;
     private $searchInput;
     private $numOfItems = 25;
-    
-    public function __construct(){
+
+    public function __construct($con){
+        $this->con = $con;
     }
 
     public function GetSearchInput(){
+        return $this->searchInput;
     }
 
     public function GetOrder(){
+        return $this->Order;
     }
 
     public function GetOrderBy(){
+        return $this->OrderBy;
     }
 
     public function GetNumOfItems(){
+        return $this->numOfItems;
     }
 
     public function GetPageIndex(){
+        return $this->pageIndex;
     }
 
     public function ShowPageNumbers(){
