@@ -1,3 +1,21 @@
+<?php
+session_start();
+$_SESSION['action1'] = "";
+if (isset($_POST['login']) && $_POST['login']) {
+    include_once("./config/config.php");
+    include_once ("./config/User.php");
+    include_once("functions.php");
+    $db = new Database();
+    $connection = $db->DB_Connect();
+    $acc=new Account($connection);
+    $email = $_POST['email'];
+    $user = $acc->SelectUserByEmail($email);
+    if ($user === false)
+        loginErrorMessage();
+
+}
+?>
+    
 <!DOCTYPE html>
 <html lang="hu">
 <?php require('./html/head.html');?>
