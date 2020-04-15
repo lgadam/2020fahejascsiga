@@ -26,6 +26,27 @@
                                placeholder="minimum 6 karakter" value="" class="form-control"
                                required/>
                     </div>
+					 <div>
+                        <label>Jelszó megerősítés</label>
+                        <td width="71%"><input type="password" name="password2" id="password2"
+                                               placeholder="minimum 6 karakter" value="" class="form-control"
+                                               required/>
+                    </div>
+                    <div>
+                        <label>Cím, ahol található</label>
+                        <input type="text" name="cim" id="cim" value="" placeholder="Cím"
+                               class="form-control" required/>
+                    </div>
+                    <div>
+                        <label>Telefonszám</label>
+                        <input type="text" name="telefon" id="telefon" placeholder="Telefonszám"
+                               value="" class="form-control"/>
+                    </div>
+                    <div>
+                        <label>Márka</label>
+                        <input type="text" name="marka" id="marka" placeholder="Pl: Honda"
+                               value="" class="form-control" required/>
+                    </div>
 					       
             </form>
             </div>
