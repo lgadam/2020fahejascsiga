@@ -47,6 +47,31 @@
                         <input type="text" name="marka" id="marka" placeholder="Pl: Honda"
                                value="" class="form-control" required/>
                     </div>
+					<div>
+                        <label>Típus</label>
+                        <input type="text" name="tipus" id="tipus" value="" placeholder="Pl: Civic"
+                               class="form-control"/>
+                    </div>
+                    <div>
+                        <label>Évjárat</label>
+                        <input type="text" name="evjarat" id="evjarat" value="" placeholder="Pl: 2006"
+                               class="form-control"/>
+                    </div>
+                    <div>
+                        <label>Kilométeróra állása</label>
+                        <input type="text" name="kmallas" id="kmallas" value="" placeholder="Pl: 216000"
+                               class="form-control"/>
+                    </div>
+                    <div>
+                        <label>Üzemanyag</label>
+                        <select class="custom-select custom-select-lg" name="uzemanyag" >
+                            <option value="">Kérjük válassz..</option>
+                            <option value="Benzin">Benzin</option>
+                            <option value="Dizel">Dízel</option>
+                            <option value="Hibrid">Hibrid</option>
+                            <option value="Elektromos">Elektromos</option>
+                        </select>
+                    </div>
 					       
             </form>
             </div>
