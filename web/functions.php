@@ -14,8 +14,10 @@ function exitAlert($alert){
     </script>");
 }
 
-function passwordVerify(){
-
+function passwordVerify($password, $password2){
+    if (!($password === $password2)) {
+        exitAlert('Nem egyeznek a jelszavak!');
+    }
 }
 
 function loginErrorMessage(){
