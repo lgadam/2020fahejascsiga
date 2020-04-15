@@ -21,11 +21,17 @@ function passwordVerify($password, $password2){
 }
 
 function loginErrorMessage(){
-
+    exitAlertRedirect('Helytelen felhasználónév vagy jelszó!', 'index.php');
 }
 
-function isProperAddress(){
-
+function isProperAddress($str){
+    if ($str == null || !is_string($str))
+        return false;
+    else
+    {
+        preg_match('@\s[0-9]{1,3}(\/\w)?\.?$@', $str, $matches);
+        return !empty($matches);
+    }
 }
 
 ?>
