@@ -72,8 +72,21 @@
                             <option value="Elektromos">Elektromos</option>
                         </select>
                     </div>
-					       
-            </form>
+					      <div>
+                        <label>Ár</label>
+                        <input type="text" name="ar" id="ar" value="" placeholder="Pl: 410000"
+                               class="form-control"/>
+                    </div>
+                    <div class="checkboxclass">
+                        <input type="checkbox" name="gdpr" required>
+                        <div> Elfogadom az <a href=""> Adatkezelési
+                                tájékoztatót.</a></div>
+                    </div>
+                    <div class="btncontainer">
+                        <input type="submit" name="submit" value="Regisztráció"
+                               class="btn btn-primary"/>
+                    </div>					       
+				</form>
             </div>
         </div>
     </div>
