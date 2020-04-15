@@ -34,7 +34,29 @@ class Account
     }
 
     public function ShowPageNumbers(){
+	$query = "SELECT COUNT(*) FROM hasznaltautok INNER JOIN userregistration ON hasznaltautok.madeby = userregistration.id WHERE userregistration.status = 1";
+        $isSearch = $this->searchInput != null;
+        if ($isSearch)
+        {
+            $query .= " AND (Marka LIKE :search1
+            OR Tipus LIKE :search2
+            OR Evjarat LIKE :search3
+            OR Kilometer_Allas LIKE :search4
+            OR Uzemanyag LIKE :search5
+            OR Ar LIKE :search6) ";
+        }
+        $sql = $this->con->prepare($query);
+        if ($isSearch) {
+            $searchInput = "%$this->searchInput%";
+            for ($i = 1; $i <= 6; $i++) {
+                $sql->bindParam(":search$i", $searchInput, PDO::PARAM_STR);
+            }
+        }
+        $sql->execute();
+        $result = $sql->fetchColumn();
+        return $result;
     }
+	
     public function SelectRecordsOfTablesByStatus(){
     }
 
