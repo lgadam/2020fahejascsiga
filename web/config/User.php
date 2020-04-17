@@ -60,7 +60,11 @@ class Account
     public function SelectRecordsOfTablesByStatus(){
     }
 
-    public function Search(){
+    public function Search($order, $orderby, $search, $pagenumber){
+        $this->OrderBy = $orderby;
+        $this->Order = $order;
+        $this->searchInput = $search;
+        $this->pageIndex = intval($pagenumber);
     }
 
 	public function Activate(){
