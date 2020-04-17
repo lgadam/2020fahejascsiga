@@ -64,10 +64,15 @@ class Account
         $this->OrderBy = $orderby;
         $this->Order = $order;
         $this->searchInput = $search;
-        $this->pageIndex = intval($pagenumber);
+        $this->pageIndex = intval($pagenumber);    
     }
-
-	public function Activate(){
+	
+    public function Activate($activation)
+	{
+        $sql=$this->con->prepare("UPDATE userregistration SET status=1 WHERE activationcode=:activation");
+        $sql->bindParam(':activation', $activation, PDO::PARAM_STR);
+        $sql->execute();
+        return $sql;
     }
 	
 	 public function DeleteUser(){
