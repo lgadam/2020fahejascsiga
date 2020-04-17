@@ -83,7 +83,11 @@ class Account
         return $user_delete;
     }
 	
-	public function DeleteRecords(){
+    public function DeleteRecords($id)
+    {
+        $sql = $this->con->prepare("DELETE FROM hasznaltautok WHERE id = :id");
+        $sql->bindParam(':id', $id, PDO::PARAM_INT);
+        $sql->execute();
     }
 
     public function GetUserId(){
