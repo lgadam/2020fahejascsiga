@@ -99,6 +99,8 @@ class Account
     }
 
     public function UpdateRecords(){
+		 $sql = $this->con->prepare("UPDATE hasznaltautok SET Cim = :cim, Marka = :marka, Tipus = :tipus, Evjarat = :evjarat, Uzemanyag = :uzemanyag, Kilometer_Allas = :kmallas, Ar = :ar WHERE $prop = :id;");
+        return $sql->execute($data);
     }
 
     public function UpdatePassword(){
