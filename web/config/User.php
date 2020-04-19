@@ -90,7 +90,12 @@ class Account
         $sql->execute();
     }
 
-    public function GetUserId(){
+    public function GetUserId(){		
+        $query = $this->con->prepare("SELECT userregistration.id FROM userregistration INNER JOIN hasznaltautok ON hasznaltautok.madeby = userregistration.id WHERE userregistration.id = hasznaltautok.madeby AND hasznaltautok.id = :id");
+        $query->bindParam(':id', $postid, PDO::PARAM_INT);
+        $query->execute();
+        $result = $query->fetchColumn();
+        return $result;
     }
 
     public function UpdateRecords(){
