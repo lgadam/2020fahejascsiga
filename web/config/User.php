@@ -103,7 +103,16 @@ class Account
         return $sql->execute($data);
     }
 
-    public function UpdatePassword(){
+    public function UpdatePassword(){		
+        $options = [
+            'cost' => 15
+        ];
+        $passwordhash = password_hash($password, PASSWORD_BCRYPT, $options);
+        $sql = $this->con->prepare("UPDATE userregistration SET password = :passwordhash  WHERE email = :email");
+        $sql->bindParam(':passwordhash', $passwordhash, PDO::PARAM_STR);
+        $sql->bindParam(':email', $email, PDO::PARAM_STR);
+        $sql->execute();
+        return $sql;
     }
 
     public function GetUserPost(){
