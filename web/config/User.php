@@ -124,7 +124,12 @@ class Account
         return $result;
     }
 
-    public function IsVerifiedEmail(){
+   public function IsVerifiedEmail($email)
+    {
+        $sql = $this->con->prepare("SELECT status FROM userregistration WHERE email=:email AND status=1");
+        $sql->bindParam(':email', $email, PDO::PARAM_STR);
+        $sql->execute();
+        return $sql && $sql->fetch();
     }
 
     public function AddNewPwd(){
