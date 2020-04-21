@@ -90,7 +90,7 @@ class Account
         $sql->execute();
     }
 
-    public function GetUserId(){		
+    public function GetUserId($postid){		
         $query = $this->con->prepare("SELECT userregistration.id FROM userregistration INNER JOIN hasznaltautok ON hasznaltautok.madeby = userregistration.id WHERE userregistration.id = hasznaltautok.madeby AND hasznaltautok.id = :id");
         $query->bindParam(':id', $postid, PDO::PARAM_INT);
         $query->execute();
@@ -98,12 +98,12 @@ class Account
         return $result;
     }
 
-    public function UpdateRecords(){
+    public function UpdateRecords($data, $prop){
 		 $sql = $this->con->prepare("UPDATE hasznaltautok SET Cim = :cim, Marka = :marka, Tipus = :tipus, Evjarat = :evjarat, Uzemanyag = :uzemanyag, Kilometer_Allas = :kmallas, Ar = :ar WHERE $prop = :id;");
         return $sql->execute($data);
     }
 
-    public function UpdatePassword(){		
+    public function UpdatePassword($password, $email){		
         $options = [
             'cost' => 15
         ];
@@ -115,7 +115,13 @@ class Account
         return $sql;
     }
 
-    public function GetUserPost(){
+    public function GetUserPost($id)
+    {
+        $sql = $this->con->prepare("SELECT Cim, Marka, Tipus, Evjarat, Uzemanyag, Kilometer_Allas, Ar FROM hasznaltautok WHERE madeby = :id");
+        $sql->bindParam(':id', $id, PDO::PARAM_INT);
+        $sql->execute();
+        $result = $sql->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public function IsVerifiedEmail(){
