@@ -132,7 +132,16 @@ class Account
         return $sql && $sql->fetch();
     }
 
-    public function AddNewPwd(){
+   
+    public function AddNewPwd($email, $timeout)
+    {
+        $expires = date("U") + $timeout;
+        $token = md5($email . time());
+        $sql = $this->con->prepare("INSERT INTO pwdreset (pwdResetEmail,pwdResetToken,pwdResetExpires) VALUES (:email, :token, :expires)");
+        $sql->bindParam(':email', $email, PDO::PARAM_STR);
+        $sql->bindParam(':token', $token, PDO::PARAM_STR);
+        $sql->bindParam(':expires', $expires, PDO::PARAM_STR);
+        return $sql->execute() ? $token : false;
     }
 
     public function RemoveAllExpired(){
