@@ -243,7 +243,9 @@ class Account
         return $sql->execute($data);
     }
 
-     public function InsertRecord(){
+     public function InsertRecord($data){
+        $sql = $this->con->prepare("INSERT INTO hasznaltautok (Cim, Marka, Tipus, Evjarat, Uzemanyag, Kilometer_Allas, Ar, madeby) VALUES (:cim, :marka, :tipus, :evjarat, :uzemanyag,:kmallas, :ar, :id)");
+        return $sql->execute($data);
     }     
 
     public function SendVerifyingEmail(){
