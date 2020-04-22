@@ -144,7 +144,12 @@ class Account
         return $sql->execute() ? $token : false;
     }
 
-    public function RemoveAllExpired(){
+    public function RemoveAllExpired()
+    {
+	$time = date("U");
+        $sql = $this->con->prepare("DELETE FROM pwdreset WHERE pwdResetExpires < :time ");
+        $sql->bindParam(':time', $time, PDO::PARAM_INT);
+        $sql->execute();
     }
 
     public function UpdatePsw(){    
