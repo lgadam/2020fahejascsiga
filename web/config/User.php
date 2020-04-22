@@ -228,7 +228,10 @@ class Account
     public function SelectUserIdByEmail(){
     }
 
-    public function CheckPassword(){
+    public function CheckPassword($userid, $password){
+        $sql = $this->con->prepare("SELECT password FROM userregistration WHERE id = :userid");
+        $sql->bindParam(':userid', $userid, PDO::PARAM_INT);
+        return $sql->execute() && password_verify($password, $sql->fetchColumn());
     }
 
     public function IsEmailInUse(){
