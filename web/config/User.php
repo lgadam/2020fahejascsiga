@@ -155,7 +155,12 @@ class Account
     public function UpdatePsw(){    
     }
 
-    public function SelectUserByEmail(){
+    public function SelectUserByEmail()
+    {
+	$sql = $this->con->prepare("SELECT id, name, email, tel, status, admin FROM userregistration WHERE email = :email");
+        $sql->bindParam(':email', $email, PDO::PARAM_STR);
+        $sql->execute();
+        return $sql->fetch();
     }
 
     public function SelectPostById(){
