@@ -208,7 +208,7 @@ class Account
         return $query->rowCount() > 0;    
     }
 
-    public function SelectUserByEmail()
+    public function SelectUserByEmail($email)
     {
 	$sql = $this->con->prepare("SELECT id, name, email, tel, status, admin FROM userregistration WHERE email = :email");
         $sql->bindParam(':email', $email, PDO::PARAM_STR);
@@ -216,7 +216,7 @@ class Account
         return $sql->fetch();
     }
 
-    public function SelectPostById()
+    public function SelectPostById($postid)
     {
 	$sql = $this->con->prepare("SELECT Cim, Marka, Tipus, Evjarat, Uzemanyag, Kilometer_Allas, Ar, userregistration.email, userregistration.tel FROM hasznaltautok INNER JOIN userregistration on hasznaltautok.madeby = userregistration.id WHERE hasznaltautok.id = :id");
         $sql->bindParam(':id', $postid, PDO::PARAM_INT);
@@ -234,7 +234,13 @@ class Account
     public function IsEmailInUse(){
     }
 
-    public function AddUser(){
+    public function AddUser($data, $password){
+        $options = [
+            'cost' => 15
+        ];
+        $data['password'] = password_hash($password, PASSWORD_BCRYPT, $options);
+        $sql = $this->con->prepare("INSERT INTO userregistration (name, email, tel, password, activationcode) VALUES (:nev, :email, :tel, :password, :activationcode)");
+        return $sql->execute($data);
     }
 
      public function InsertRecord(){
