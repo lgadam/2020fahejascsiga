@@ -163,7 +163,13 @@ class Account
         return $sql->fetch();
     }
 
-    public function SelectPostById(){
+    public function SelectPostById()
+    {
+	$sql = $this->con->prepare("SELECT Cim, Marka, Tipus, Evjarat, Uzemanyag, Kilometer_Allas, Ar, userregistration.email, userregistration.tel FROM hasznaltautok INNER JOIN userregistration on hasznaltautok.madeby = userregistration.id WHERE hasznaltautok.id = :id");
+        $sql->bindParam(':id', $postid, PDO::PARAM_INT);
+        $sql->execute();
+        $result = $sql->fetch();
+        return $result;
     }
     
     public function SelectUserIdByEmail(){
