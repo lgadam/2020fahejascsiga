@@ -58,6 +58,44 @@ class Account
     }
 	
     public function SelectRecordsOfTablesByStatus(){
+        $query = "SELECT hasznaltautok.id, Cim, Marka, Tipus, Evjarat, Uzemanyag, Kilometer_Allas, Ar FROM hasznaltautok INNER JOIN userregistration ON hasznaltautok.madeby = userregistration.id WHERE userregistration.status = 1";
+        $isSearch = $this->searchInput != null;
+        $isOrderBy = in_array($this->OrderBy, array("Marka", "Evjarat", "Ar"));
+        $isOrder = $isOrderBy && in_array($this->Order, array("DESC", "ASC"));
+        $isPageNumber = $this->pageIndex != null && is_int($this->pageIndex);
+        if ($isSearch)
+        {
+            $query .= " AND (Marka LIKE :search1
+            OR Tipus LIKE :search2
+            OR Uzemanyag LIKE :search3
+            OR Kilometer_Allas LIKE :search4
+            OR Ar LIKE :search5
+            OR Evjarat LIKE :search6) ";
+        }
+        if ($isOrderBy)
+        {
+            $query .= " ORDER BY $this->OrderBy ";
+        }
+        if ($isOrder) {
+            $query .= $this->Order;
+        }
+        $query.=" LIMIT $this->numOfItems";
+        if ($isPageNumber)
+        {
+            $number = ($this->pageIndex-1)*$this->numOfItems;
+            $query.=" OFFSET ".$number;
+        }
+        $sql = $this->con->prepare($query);
+        if ($isSearch) {
+            $searchInput = "%$this->searchInput%";
+            for ($i = 1; $i <= 6; $i++) {
+                $sql->bindParam(":search$i", $searchInput, PDO::PARAM_STR);
+            }
+        }
+        $sql->execute();
+        $result = $sql->fetchAll(PDO::PARAM_STR);
+
+        return $result;
     }
 
     public function Search($order, $orderby, $search, $pagenumber){
