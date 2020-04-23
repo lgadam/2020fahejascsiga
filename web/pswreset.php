@@ -47,7 +47,36 @@ if (isset($_POST['email'])) {
         <input type="email" name="email" class="form-control" > <br>
         <input class="btn btn-primary" type="submit" value="Küldés">
 
+        </form>';
+                    } else {
+                        echo '<form action="" method="post">
+        <input type="password" name="password" class="form-control" > <br>
+        <input type="password" name="confPassword" class="form-control"> <br>
+        <input type="submit"  class="btn" value="Küldés">
+
     </form>';
+                    }
+                    if (isset($_POST['password']) && isset($_POST['confPassword'])) {
+                        include_once("./config/config.php");
+                        include_once("functions.php");
+                        include_once("./config/User.php");
+                        passwordVerify($_POST['password'], $_POST['confPassword']);
+                        $db = new Database();
+                        $connection = $db->DB_Connect();
+                        $user = new Account($connection);
+                        $user->RemoveAllExpired();
+                        $options = [
+                            'cost' => 15
+                        ];
+                        $password = password_hash($_POST['password'], PASSWORD_BCRYPT, $options);
+                        $email = $_GET['email'];
+                        $token = $_GET['token'];
+                        exitAlertRedirect(($user->UpdatePsw($password, $email, $token) ? "Sikeres" : "Sikertelen") . " Művelet!", 'login.php');
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
  </main>
 <?php require('./html/footer.html'); ?>
 </body>
