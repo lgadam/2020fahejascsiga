@@ -30,3 +30,25 @@ if (isset($_POST['email'])) {
     exitAlertRedirect('Kérem nézze meg email fiókját a jelszó helyreállításához!', 'login.php');
 }
 ?>
+<!DOCTYPE html>
+<html lang="hu">
+<?php require('./html/head.html');?>
+<body class="login-body">
+<?php require("nav.php"); ?>
+    <main class="container-fluid">
+        <div class="col-sm-12>
+            <div class="row">
+                <div class="col-xs-12 lilpadding container border">
+                    <h1>Jelszó Emlékeztető</h1>
+                    <?php
+                    if (!isset($_GET['email'])) {
+                        echo '<form class="pswresetform" action="" method="post">
+        <label>Kérem adja meg email címét</label>
+        <input type="email" name="email" class="form-control" > <br>
+        <input class="btn btn-primary" type="submit" value="Küldés">
+
+    </form>';
+ </main>
+<?php require('./html/footer.html'); ?>
+</body>
+</html>
