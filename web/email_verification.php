@@ -15,6 +15,18 @@ if (!empty($_GET['code']) && isset($_GET['code'])) {
 <body>
 <?php require('nav.php');?>
 <div class="container-fluid">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Sikeres email megerősítés!</h3>
+                <hr>
+                <p></p>
+                <p> Most már be tud jelentkezni.</p>
+                <p>A bejelentkezéshez <a href="login.php">kattintson ide</a>.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
     <div class="col-sm-4">
         <div class="panel panel-default">
         </div>
