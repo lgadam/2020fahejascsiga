@@ -14,5 +14,28 @@ if (isset($_SESSION['login'])) {
     $kmallas = $_POST['kmallas'];
     $uzemanyag = $_POST['uzemanyag'];
     $ar = $_POST['ar'];
-
+    if ($_SESSION['admin']) {
+        $id = $_POST['id'];
+        $prop = "id";
+    } else {
+        $id = $_SESSION['id'];
+        $prop = 'madeby';
+    }
+    $data =
+        [
+            'cim' => $cim,
+            'marka' => $marka,
+            'tipus' => $tipus,
+            'evjarat' => $evjarat,
+            'kmallas' => $kmallas,
+            'uzemanyag' => $uzemanyag,
+            'ar' => $ar,
+            'id' => $id
+        ];
+    $sql = $update->UpdateRecords($data, $prop);
+    $db->Disconnect();
+    if ($sql)
+        exitAlertRedirect('Sikeres módosítás', 'index.php');
+    else
+        exitAlertRedirect('Sikertelen módosítás', 'modify.php');
 }
