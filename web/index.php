@@ -45,6 +45,49 @@ $connection = $db->DB_Connect();*/
                     <input type="submit" value="Küldés" class="btn btn-primary">
                 </form>
             </div>
+            </div>
+                <table class="table table-active table-striped">
+                    <tbody id="demo">
+                    <?php $table->FillTable(); ?>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form name='insert' action='update.php' method='post'>
+                                        Márka
+                                        <input type='text' name='marka' id='marka' value='' class='form-control' required/>
+                                        Típus
+                                        <input type='text' name='tipus' id='tipus' value='' class='form-control' required/>
+                                        Évjárat
+                                        <input type='text' name='evjarat' id='evjarat' value='' class='form-control' required/>
+                                        Kilométeróra állása
+                                        <input type='text' name='kmallas' id='kmallas' value='' class='form-control'
+                                               required/>
+                                        Üzemanyag
+                                        <input type='text' name='uzemanyag' id='uzemanyag' value='' class='form-control' required/>
+                                        Adatlap
+                                        <input type='text' name='link' id='link' value='' class='form-control'/>
+                                        <br>
+                                        <input type="text" class="fade" name='id' id="id" value='' readonly>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <input type="submit" class="btn btn-primary"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </tbody>
+                </table>
+        </div>
     </div>
 </main>
 <?php require('./html/footer.html'); ?>
