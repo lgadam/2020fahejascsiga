@@ -47,6 +47,26 @@ $connection = $db->DB_Connect();*/
             </div>
             </div>
                 <table class="table table-active table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th><i class="fas fa-map-marked-alt"></i></th>
+                        <th>Márka
+                        </th>
+                        <th>Típus</th>
+                        <th>Évjárat
+                        </th>
+                        <th>Kilométeróra állása</th>
+                        <th>Üzemanyag</th>
+                        <th>Ár</th>
+                        <th>Adatlap</th>
+                        <?php
+                        if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+                            echo "<th>Törlés</th>";
+                            echo "<th>Szerkesztés</th>";
+                        }
+                        ?>
+                    </tr>
+                    </thead>
                     <tbody id="demo">
                     <?php $table->FillTable(); ?>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
