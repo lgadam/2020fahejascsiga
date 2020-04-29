@@ -56,5 +56,9 @@ class Table
     public function GetCount(){
         return $this->count;
     }
+
+    public function GetNumOfItems(){
+        return $this->numOfItems;
+    }
 }
 ?>
