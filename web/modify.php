@@ -101,6 +101,24 @@ if ($isPostModify) { ?>
 <?php }
 if ($isPwModify) {
 ?>
+        <h1>Jelszó változtatása</h1>
+        <form class="modifyform" name='insert' action='' method='post'>
+            <div>
+                <label> Jelenlegi Jelszó</label>
+                <input type="password" name="currentpw" placeholder="Kérem adja meg aktuális jelszavát"
+                       id="currentpw" value="" class="form-control" required/>
+            </div>
+            <div>
+                <label> Jelszó</label>
+                <input type="password" name="password" placeholder="Új jelszó" id="password" value=""
+                       class="form-control" required/>
+            </div>
+            <div>
+                <label>Jelszó megerősítés</label>
+                <input type="password" name="password2" placeholder="Jelszó megerősítése" id="password2" value=""
+                       class="form-control" required/>
+            </div>
+        </form>
 <div class='container border'>
     <div>
     </div>
