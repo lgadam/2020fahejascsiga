@@ -48,5 +48,8 @@ class Table
 
         }
     }
+    public function ShowPageNumber($numOfFound){
+        echo $this->pageIndex.". oldal, ".$numOfFound." találat";
+    }
 }
 ?>
