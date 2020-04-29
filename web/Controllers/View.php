@@ -14,5 +14,8 @@ class Table
         $this->count = sizeof($data);
         $this->pages = intval(ceil($this->count/$this->numOfItems));
     }
+    public function GetPageIndex(){
+        return $this->pageIndex;
+    }
 }
 ?>
