@@ -42,3 +42,5 @@ if ($isPwModify && isset($_POST['password']) && isset($_POST['password2']) && is
     }
     
 }
+?>
+
