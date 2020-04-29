@@ -68,6 +68,35 @@ if ($isPostModify) { ?>
                 <input type='text' name='tipus' id='tipus'
                        value="<?php echo htmlspecialchars($adat['Tipus']); ?>" class='form-control' required/>
             </div>
+             <div>
+                <label>Évjárat </label>
+                <input type='text' name='evjarat' id='evjarat'
+                       value="<?php echo htmlspecialchars($adat['Evjarat']); ?>" class='form-control' required/>
+            </div>
+            <div>
+                <label>Üzemanyag</label>
+                <select class="custom-select custom-select-lg" name="uzemanyag" >
+                    <option value="<?php echo htmlspecialchars($adat['Uzemanyag']); ?>"><?php echo htmlspecialchars($adat['Uzemanyag']); ?></option>
+                    <option value="Benzin">Benzin</option>
+                    <option value="Dizel">Dízel</option>
+                    <option value="Hibrid">Hibrid</option>
+                    <option value="Elektromos">Elektromos</option>
+                </select>
+            </div>
+            <div>
+                <label>Kilométeróra Állás </label>
+                <input type='text' name='kmallas' id='kmallas'
+                       value="<?php echo htmlspecialchars($adat['Kilometer_Allas']); ?>" class='form-control' required/>
+            </div>
+            <div>
+                <label>Ár </label>
+                <input type='text' name='ar' id='ar'
+                       value="<?php echo htmlspecialchars($adat['Ar']); ?>" class='form-control' required/>
+            </div>
+
+            <div class="btncontainer">
+                <input type='submit' name='submit' value='Szerkesztés' class='btn btn-primary'/>
+            </div>
         </form>
 <?php }
 if ($isPwModify) {
