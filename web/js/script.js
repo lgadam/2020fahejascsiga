@@ -29,3 +29,7 @@ class ScrollHandler {
         }
     }
 }
+$(function() {
+let scrollHandler = new ScrollHandler();
+$(window).on('scroll', scrollHandler.OnScrollInput);
+})
