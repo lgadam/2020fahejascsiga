@@ -101,6 +101,7 @@ if ($isPostModify) { ?>
 <?php }
 if ($isPwModify) {
 ?>
+<div class='container border'>
         <h1>Jelszó változtatása</h1>
         <form class="modifyform" name='insert' action='' method='post'>
             <div>
@@ -118,11 +119,27 @@ if ($isPwModify) {
                 <input type="password" name="password2" placeholder="Jelszó megerősítése" id="password2" value=""
                        class="form-control" required/>
             </div>
+            <div class="btncontainer">
+                <input type='submit' name='submit' value='Változtatás' class='btn btn-primary'/>
+            </div>
         </form>
-<div class='container border'>
-    <div>
+
+
+
     </div>
-<?php } ?>
+        <form class="modifyform" action="deleteuser.php" method="post">
+            <div>
+            <label for="">Fiók törlése</label>
+                <input type="password" name="deletepw" placeholder="Add meg a jelszavad..." id="password2" value=""
+                       class="form-control" required/>
+            </div>
+            <div class="btncontainer">
+            <input type="submit" class="btn btn-primary" class='deleteuserbtn' value="Fiók törlése"/>
+            </div>
+        </form>
+
+    </div>
+    <?php } ?
 </main>
 <?php require('./html/footer.html'); ?>
 </body>
