@@ -21,3 +21,36 @@ body{
   position: relative;
   flex-direction: column;
 }
+
+.navbar{
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 10px #000000;
+  width: 100%;
+  z-index: 5050;
+    padding: 0 50px;
+}
+
+.location
+.container-fluid, .container {
+  padding-top:50px;
+}
+
+.table td{
+  text-align: center;
+  padding: 0;
+}
+
+.table th{
+  text-align: center;
+}
+
+td i{
+  color: black;
+  font-size: 20px;
+    transition: 1s font-size;
+}
+
+td i:hover{
+    font-size: 40px;
+}
