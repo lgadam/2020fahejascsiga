@@ -1,0 +1,23 @@
+:root{
+    --nav-primary: #f8f9fa;
+    --background: #84272F;
+}
+*{
+  font-family: 'Raleway', sans-serif;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  margin: 30px 0;
+}
+html,
+.login-body {
+    height: 100%;
+}
+body{
+    background-color: rgba(133, 33, 41, 0.9);
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
