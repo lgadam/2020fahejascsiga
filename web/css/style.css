@@ -131,3 +131,17 @@ main{
     display: flex;
     justify-content: space-around;
 }
+.btn_container{
+  display: flex;
+  justify-content: center;
+}
+.btn_container button{
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  margin:auto;
+  border: 0;
+}
+._container_{
+  width: 100%;
+}
