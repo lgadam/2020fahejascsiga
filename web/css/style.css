@@ -145,3 +145,22 @@ main{
 ._container_{
   width: 100%;
 }
+table{
+
+  word-break: break-word;
+  border-spacing: 0;
+
+}
+td{
+    padding: 10px 0 !important;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;;
+}
+td a{
+    text-decoration: none;
+    color: black;
+}
+td a:hover{
+    color: white;
+    text-decoration: none;
+}
