@@ -231,4 +231,15 @@ label{
 .modal-dialog{
   margin: 200px auto;
 }
-
+nav a img{
+  width:150px;
+  height: 60px;
+    -webkit-filter: drop-shadow(0px 0px 1px #000000);
+    filter: drop-shadow(0px 0px 1px #000000);
+    opacity: 0.75;
+    transition: 2s opacity;
+    margin: auto;
+}
+nav a img:hover{
+    opacity: 1;
+}
