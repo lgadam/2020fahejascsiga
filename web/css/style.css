@@ -92,3 +92,42 @@ label i{
   font-size: 20px;
   margin-left: 5px;
 }
+h1{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search{
+  padding: 10px;
+  background-color: inherit;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+table{
+  max-width: 100%;
+  margin: 0;
+}
+main{
+  padding: 100px 40px;
+}
+.footer{
+    padding: 10px 40px;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.search_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.deletebtncontainer{
+    display: flex;
+    justify-content: space-around;
+}
