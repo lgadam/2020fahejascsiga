@@ -216,4 +216,19 @@ td a:hover{
 label{
   margin: 10px 15px;
 }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+
+.meret{
+  background-color: inherit;
+  border-radius: 10px;
+}
+.show{
+  opacity: 1;
+}
+.modal-dialog{
+  margin: 200px auto;
+}
 
