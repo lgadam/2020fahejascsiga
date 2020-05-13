@@ -41,3 +41,6 @@ Mohai Ferenc;2020/05/11;Bejelentkezés;ECF;I;;;
 Mohai Ferenc;2020/05/11;Hozzáadás;ECF;I;;;
 Mohai Ferenc;2020/05/11;Módosítás;ECF;I;;;
 Mohai Ferenc;2020/05/11;Törlés;ECF;I;;;
+Mohai Ferenc;2020/05/11;Rendezés;ECF;I;;;
+Mohai Ferenc;2020/05/11;Keresés;ECF;I;;;
+Mohai Ferenc;2020/05/11;Lapozás;ECF;I;;;
