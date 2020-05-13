@@ -27,20 +27,20 @@ if ($isPwModify && isset($_POST['password']) && isset($_POST['password2']) && is
         exitAlertRedirect("Nem a jelenlegi jelszót adta meg!", "modify.php");
     passwordVerify($password, $_POST['password2']);
     exitAlertRedirect($account->UpdatePassword($password, $email) ? 'Sikeres módosítás!' : 'Sikertelen módosítás', 'modify.php');
+}
 
-    include_once("./config/config.php");
-    include_once("./config/User.php");
-    include_once("functions.php");
-    $db = new Database();
-    $connection = $db->DB_Connect();
-    $account = new Account($connection);
 
-    if ($isPostModify) {
-        $adat = $isAdmin ? $account->SelectPostById($_GET['id']) : $account->GetUserPost($id);
-        if ($adat === false)
-            exitAlertRedirect("Nincs ilyen adat!", "index.php");
-    }
-    
+include_once("./config/config.php");
+include_once("./config/User.php");
+include_once("functions.php");
+$db = new Database();
+$connection = $db->DB_Connect();
+$account = new Account($connection);
+
+if ($isPostModify) {
+    $adat = $isAdmin ? $account->SelectPostById($_GET['id']) : $account->GetUserPost($id);
+    if ($adat === false)
+        exitAlertRedirect("Nincs ilyen adat!", "index.php");
 }
 ?>
 <!DOCTYPE html>
