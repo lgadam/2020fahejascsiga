@@ -1,4 +1,15 @@
 <?php
+    if (isset($_SESSION['login']) && $_SESSION['login']) {
+        $name = "Kijelentkezés";
+        $log = "logout.php";
+        $regphp = "modify.php";
+        $reg = "Szerkesztés";
+    } else {
+        $name = "Bejelentkezés";
+        $log = "login.php";
+        $regphp = "register.php";
+        $reg = "Regisztráció";
+    }
     echo
     "<nav class='navbar navbar-expand-lg navbar-light bg-light'> 
       <a href='index.php' class='navbar-brand'><img class='logo' src='logo.png' alt='logo' title='logo' /></a>
