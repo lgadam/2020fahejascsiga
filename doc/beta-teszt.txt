@@ -17,3 +17,21 @@ Besenyei Gergely;2020/05/12;Törlés;ECF;I;;;
 Besenyei Gergely;2020/05/12;Rendezés;ECF;I;;;
 Besenyei Gergely;2020/05/12;Keresés;ECF;I;;;
 Besenyei Gergely;2020/05/12;Lapozás;ECF;I;;;
+
+Pap Gábor;2020/05/12;Regisztracio;ECF;I;;;
+Pap Gábor;2020/05/12;Bejelentkezés;ECF;I;;;
+Pap Gábor;2020/05/12;Hozzáadás;ECF;I;;;
+Pap Gábor;2020/05/12;Módosítás;ECF;I;;;
+Pap Gábor;2020/05/12;Törlés;ECF;I;;;
+Pap Gábor;2020/05/12;Rendezés;ECF;I;;;
+Pap Gábor;2020/05/12;Keresés;ECF;I;;;
+Pap Gábor;2020/05/12;Lapozás;ECF;I;;;
+
+Váczi Krisztina;2020/05/12;Regisztracio;ECF;I;;;
+Váczi Krisztina;2020/05/12;Bejelentkezés;ECF;I;;;
+Váczi Krisztina;2020/05/12;Hozzáadás;ECF;I;;;
+Váczi Krisztina;2020/05/12;Módosítás;ECF;I;;;
+Váczi Krisztina;2020/05/12;Törlés;ECF;I;;;
+Váczi Krisztina;2020/05/12;Rendezés;ECF;I;;;
+Váczi Krisztina;2020/05/12;Keresés;ECF;I;;;
+Váczi Krisztina;2020/05/12;Lapozás;ECF;I;;;
