@@ -6,3 +6,8 @@ Pap Gábor;Főoldal;2020/05/08;10;Nem működik az e-mail visszaigazolás;;Mozil
 Pap Gábor;Főoldal;2020/05/08;10;Nem működik megfelelően a felhasználó törlés;;Google Chrome Verzió: 78.0.3904.108;
 Pap Gábor;Főoldal;2020/05/08;10;Nem működik megfelelően a felhasználó törlés;;Mozilla Firefox Verzió: 71.0;
 
+Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;;Google Chrome Verzió: 78.0.3904.108;
+Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;Microsoft Edge 44.18362.449.0;
+Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;;Mozilla Firefox Verzió: 71.0;
+Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;;Opera Verzió: 46.012;
+Juhász Bálint;Főoldal;2020/05/08;10;Nem lehet adminként felhasználót törölni;;Google Chrome Verzió: 78.0.3904.108;
