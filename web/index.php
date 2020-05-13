@@ -1,6 +1,18 @@
 <?php
-/*$db = new Database();
-$connection = $db->DB_Connect();*/
+session_start();
+include_once("./config/config.php");
+include_once("./config/User.php");
+include_once("functions.php");
+$db = new Database();
+$connection = $db->DB_Connect();
+$account = new Account($connection);
+if (isset($_POST['sortorder']) || isset($_POST['sortby']) || isset($_POST['search']) || isset($_POST['pagenumber'])){
+ $account->Search($_POST['sortorder'], $_POST['sortby'], $_POST['search'], $_POST['pagenumber']);
+}
+include_once('./Controllers/View.php');
+$adat = $account->SelectRecordsOfTablesByStatus();
+$table = new Table($adat, $account->GetNumOfItems(), $account->GetPageIndex());
+if ($adat === false) exitAlert("Üres a tábla!");
 ?>
 <!DOCTYPE html>
 <html lang="hu">
