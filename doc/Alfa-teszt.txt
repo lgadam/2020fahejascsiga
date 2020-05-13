@@ -1,0 +1,3 @@
+Alfa teszt
+Tesztelő;Észrevétel helye (hol?);Dátum;Prioritás (1-10);Leírás;Melléklet(opcionális);Böngésző;
+
