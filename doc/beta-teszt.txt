@@ -35,3 +35,6 @@ Váczi Krisztina;2020/05/12;Törlés;ECF;I;;;
 Váczi Krisztina;2020/05/12;Rendezés;ECF;I;;;
 Váczi Krisztina;2020/05/12;Keresés;ECF;I;;;
 Váczi Krisztina;2020/05/12;Lapozás;ECF;I;;;
+
+Mohai Ferenc;2020/05/11;Regisztracio;ECF;I;;;
+Mohai Ferenc;2020/05/11;Bejelentkezés;ECF;I;;;
