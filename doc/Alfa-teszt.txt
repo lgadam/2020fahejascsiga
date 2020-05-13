@@ -17,3 +17,5 @@ Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelen
 Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;;Mozilla Firefox Verzió: 71.0;
 Juhász Bálint;Főoldal;2020/05/08;10;Adatmódosítás után a régi adat jelenik meg;;Opera Verzió: 46.012;
 Juhász Bálint;Főoldal;2020/05/08;10;Nem lehet adminként felhasználót törölni;;Google Chrome Verzió: 78.0.3904.108;
+
+Mohai Ferenc;Főoldal;2020/05/10;10;Nem lehet felhasználót törölni;;Microsoft Edge 44.18362.449.0;
