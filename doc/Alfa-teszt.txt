@@ -20,3 +20,5 @@ Juhász Bálint;Főoldal;2020/05/08;10;Nem lehet adminként felhasználót tör�
 
 Mohai Ferenc;Főoldal;2020/05/10;10;Nem lehet felhasználót törölni;;Microsoft Edge 44.18362.449.0;
 Mohai Ferenc;Főoldal;2020/05/10;10;Regisztrációnál nem pontozza ki a jelszót;;Google Chrome Verzió: 78.0.3904.108;
+Mohai Ferenc;Főoldal;2020/05/10;10;Regisztrációnál nem pontozza ki a jelszót;;Mozilla Firefox Verzió: 71.0;
+Mohai Ferenc;Főoldal;2020/05/10;10;Regisztrációnál nem pontozza ki a jelszót;;Opera Verzió: 46.012;
