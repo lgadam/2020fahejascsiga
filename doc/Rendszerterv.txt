@@ -1,21 +1,19 @@
 1. Rendszer célja
-A weboldal olyanok számára készül, akik szeretnék eladni az autójukat, de nem szeretnének fizetni a hirdetésért. Az oldalunkon könnyen tudja regisztrálni autóját a felhasználó
-barát felületünkön. Aki pedig autót szeretne vásárolni könnyen tud nézelődni az oldalunkon. Mindenkinek lehetősége van eladni kívánt autóját regisztrálni, valamint használt autók
-után nézelődni a weboldalunkon.
+
+Weboldalunk célközönsége a társadalomnak az a rétege, akik egy olyan szolgáltatást szeretnének igénybe venni, ami tulajdonképpen egy virtuális kereskedés, ahol adni és venni lehet a használt autókat. Az oldal kialakításakor arra törekedtünk, hogy a felhasználók igényeihez igazodva, egy könnyen használható, átlátható, letisztult felületet nyújtsunk. A regisztráció a lehető legkevesebb kötöttséget tartalmazza, ugyanakkor fontos volt, hogy gyors legyen és megfeleljen az ügyfelek elvárásainak. A rendszer funkciói lehetővé teszik az ügyfél részére, akár a nézelődést, akár a feltételek szerinti szűrést, akár a teljes adás-vétel online lebonyolítását.
 
 2. Projekt terv
-Az a célunk, hogy a projekt összes résztvevője foglalkozzon a felmerülő problémák mindegyikével.
-Mérföldkövek: Elsőnek a dokumentáció elkészítését tartottuk a legfontosabbnak, majd ezután következett a képernyőtervek elkészítése, végül a feladatok megoldása közös erővel. 
+Projektünket, úgy indítottuk el, hogy több résztvevő közreműködésével, közösen találjunk megoldásokat a felmerülő problémákra, és egy felsőbb éves figyelme alatt egyenlően szétosztjuk a feladatot egymás közt.
+Lépések / mérföldkövek: Első és legfontosabb lépés, mint minden projekt kezdetén, a dokumentáció megírásával kialakítani egy eljárásrendet, aminek mentén elindulva, egy vázat építhetünk fel. Ez segítségünkre van abban, hogy a képernyőterveket, a különböző projektfelelősök részmegoldásait, és a felmerülő problémákat egy átlátható rendszerben kezeljük. Fontos volt, hogy a terv tartalmazza az elkészült részfeladatok tesztelését, hiszen ez az, ami a valóságot szimulálva a leghamarabb rávilágít az esetleges hibákra.
 
 3. Üzleti folyamatok modellje
-Az embereket megkérdezve szeretnénk alkotni egy olyan hirdető oldalt, amely csak használt autókkal foglalkozik, könnyen kezelhető felületet biztosít a felhasználók számára,
-valamint teljes mértékben ingyenes. Jótékonysági alapon működünk együtt.
+A megrendelőkkel részletes megbeszélés alapján készíteni fogunk egy alap vázlatot, ami az oldal nyújtotta szolgáltatásokhoz kiinduló pontként fog szolgálni. Erre építjük majd fel a projekt különböző résztvevőinek a részfeladatait, melyek elkészülte után le fogjuk futtatni azt a megrendelő előtt, és az ő igényeik szerint módosítjuk a felületet. A készülő weboldal kizárólag használt autók adatait tartalmazza, egy olyan könnyen kezelhető felület segítségével navigálja végig a felhasználót, aminek használata nagyon egyszerű és letisztult. Az oldalon elérhető szolgáltatás igénybe vétele teljesen ingyenes, a megrendelőkkel jótékonysági/baráti alapon működünk együtt, nincs részesedésünk az esetlegesen megnövekedő forgalom bevételeiből.
 
-4.Követelmények
-A jelenlegi szabványoknak teljes mértékben megfelel.
+4. Követelmények
+Az oldal megfelel a Magyarországon érvényben lévő jogszabályoknak, különös tekintettel az adatkezelési (GDPR) előírásoknak, valamint az Innovációs és Technológiai Minisztérium ajánlásainak.
 
-5.Funkcionális terv
-Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre , bejelentkezési oldalra. Képernyőtervek elkészültek, feltöltve külön fájlként.
+5. Funkcionális terv
+Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felületre, bejelentkezési oldalra, ahol az ügyfélnek csak a felhasználó nevet és egy jelszót kell megadnia. Képernyőtervek elkészültek, feltöltve külön fájlként lesznek.
 
 6. Fizikai Környezet
 - A weboldal egyaránt használható minden fajta erre alkalmas eszközön, mivel teljes mértékben reszponzív.
@@ -27,19 +25,19 @@ Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felüle
 	- Atom
 	- Bootstrap
 
-7.Absztrakt domain model
+7. Absztrakt domain model
 Szerepek
 - Admin: Teljeskörű adminisztrátor, mindent lát, mindent tud állítani. A projekthez tartozó összes részt.
 - Read Only: Csak olvasási joga van a projektben.
 - User: A webes szoftvert használó egyén.
 
 8. Architekturális terv
-A rendszer folyamatosan bővíthető a felhasználók által. A bejelentkezési felületen megtudnak adni minden szükséges adatot, amivel belekerülnek az adatbázisba.
-Biztonsági funkciók közé tartozik, hogy van admin fiók, ami minden regisztrált felhasználó adatát láthatja, kezelheti, kivéve a jelszót, mivel az titkosítva szerepel.
-Minden felhasználó csak a saját adatait tudja módosítani, illetve törölni.
+A rendszer folyamatosan bővíthető a felhasználók által, a szerverkapacitás mértékéig, melynek a fejlesztéséről a megrendelő dönt. A bejelentkezési felületen a felhasználók meg tudnak adni minden szükséges adatot, amivel a meghirdetésre szánt autók adatai bekerülnek az adatbázisba.
+A biztonsági funkciók közé tartozik, hogy van admin fiók, amivel az adatbázisban szereplő hirdetések, valamint minden regisztrált felhasználó adatát lehet látni és kezelni, kivéve a jelszót, mivel az titkosítva szerepel.
+A felhasználói oldalról a felületen csak a saját maga által közzé tett adatok módosítására, illetve törlésére van lehetőség.
 
 9. Adatbázis terv 
-3 darab adatbázist használ az oldal amik a következőek:
+3 darab adatbázist használ az oldal, amik a következők:
 	-Tartalmazza magát az eladni kívánt használt autók adatait
 	-Regisztrált felhasználókat tartalmazza
 	-Jelszó visszaállításához szükséges adatokat tárolja.
@@ -54,7 +52,7 @@ Ezt a tesztet már a felhasználók végzik, időtartama egy hét. A tesztelés 
 lenne a programban a fejlesztők kijavítják a lehető leghamarabb.
 
 11. Telepítési terv
-A weboldalt nem kell telepíteni, szükséges hozzá egy böngésző és bármilyen erre alkalmas platformról elérhető.
+A weboldalt nem kell telepíteni, szükséges hozzá élő internet kapcsolat, egy böngésző és bármilyen erre alkalmas platformról elérhető.
 
 12.Karbantartási terv
 A weblap közepes mennyiségű karbantartást igényel, amely a következőkre bontható:
