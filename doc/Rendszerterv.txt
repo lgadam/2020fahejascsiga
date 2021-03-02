@@ -20,11 +20,12 @@ Az oldal menüjéből tudunk navigálni a kezdőlapra, a regisztrációs felüle
 - Nincsennek megvásárolt komponenseink
 - Fejlesztő eszközök:
 	- Notepad++
-	- Wampserver64
+	- xampp
 	- PHPStorm
-	- Atom
+	- Sublimetext
 	- Bootstrap
-
+	- Laravel
+	- Mysql database
 7. Absztrakt domain model
 Szerepek
 - Admin: Teljeskörű adminisztrátor, mindent lát, mindent tud állítani. A projekthez tartozó összes részt.
